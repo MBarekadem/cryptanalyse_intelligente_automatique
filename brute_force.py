@@ -22,7 +22,6 @@ def break_caesar(ciphertext):
     best_result = {               # un enregistrement du Résultat final
         "key": None,
         "text": "",
-        "score": 0,
         "language": ""
     }
 
@@ -41,7 +40,7 @@ def break_caesar(ciphertext):
             best_score = total_score
             best_result["key"] = key
             best_result["text"] = decrypted
-            best_result["score"] = total_score
+            
             best_result["language"] = "Français" if score_fr > score_en else "Anglais"
 
     return best_result 

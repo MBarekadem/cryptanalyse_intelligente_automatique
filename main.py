@@ -8,7 +8,6 @@ def main():
 
     print("Clé détectée :", result["key"])
     print("Langue détectée :", result["language"])
-    print("Score :", result["score"])
     print("\nTexte clair probable :\n")
     print(result["text"])
 
